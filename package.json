@@ -1,0 +1,44 @@
+{
+  "name": "remix-template-express",
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix build && run-p dev:*",
+    "dev:node": "cross-env NODE_ENV=development nodemon ./server.js --watch ./server.js",
+    "dev:remix": "remix watch",
+    "start": "cross-env NODE_ENV=production node ./server.js"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.8.0",
+    "@mui/material": "^5.8.1",
+    "@mui/styles": "^5.8.0",
+    "@remix-run/express": "^1.5.1",
+    "@remix-run/node": "^1.5.1",
+    "@remix-run/react": "^1.5.1",
+    "bootstrap": "^5.1.3",
+    "compression": "^1.7.4",
+    "cross-env": "^7.0.3",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^17.0.2",
+    "react-i18next": "^11.16.9",
+    "react-imask": "^6.4.2",
+    "react-yandex-maps": "^4.6.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.5.1",
+    "@remix-run/eslint-config": "^1.5.1",
+    "eslint": "^8.15.0",
+    "nodemon": "^2.0.16",
+    "npm-run-all": "^4.1.5"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
